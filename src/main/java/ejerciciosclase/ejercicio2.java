@@ -4,6 +4,8 @@
  */
 package ejerciciosclase;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Maximus
@@ -11,7 +13,9 @@ package ejerciciosclase;
 public class ejercicio2 {
     
     public static void main(String[] args) {
-        String nombre = "Esvin";
-        System.out.println("Buenos dias "+nombre);
+        System.out.println("Ingrese su nombre: ");
+        Scanner obtener = new Scanner (System.in);
+        String nombre = obtener.nextLine();
+        System.out.println("Buenos dias "+nombre+"!");
     }
 }

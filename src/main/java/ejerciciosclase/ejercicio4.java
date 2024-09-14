@@ -4,15 +4,18 @@
  */
 package ejerciciosclase;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Maximus
  */
 public class ejercicio4 {
     public static void main(String[] args) {
-        int gradosCentigrados = 45;
-        int gradosFahreinheit = 32+(9*gradosCentigrados/5);
-        System.out.println("Grados Centigrados : " + gradosCentigrados);
-        System.out.println("Los grados en Fahrenheit serian : " + gradosFahreinheit );
+        System.out.println("Ingrese los grados Centigrados: ");
+        Scanner obtener = new Scanner (System.in);
+        int gradosC = obtener.nextInt();
+        int gradosF = 32+(9*gradosC/5);
+        System.out.println("Grados Centigrados : " + gradosC + '\n'+ "Los grados en Fahrenheit serian: "+gradosF );
     }
 }

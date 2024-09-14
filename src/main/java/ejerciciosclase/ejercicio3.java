@@ -4,17 +4,17 @@
  */
 package ejerciciosclase;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Maximus
  */
 public class ejercicio3 {
     public static void main(String[] args) {
-        int numero = 2;
-        System.out.println("Numero ingresado es: "+numero);
-        int doble = numero * 2;
-        int triple = numero * 3;
-        System.out.println("El doble seria: "+doble);
-        System.out.println("El triple seria: "+triple);
+        System.out.println("Ingrese un numero: ");
+        Scanner obtener = new Scanner (System.in);
+        int numero = obtener.nextInt();
+        System.out.println("Numero ingresado es: "+numero+'\n'+"El doble del numero es: "+(int)(Math.pow(numero, 2))+'\n'+"El triple del numero es: "+(int)(Math.pow(numero, 3)));
     }
 }
